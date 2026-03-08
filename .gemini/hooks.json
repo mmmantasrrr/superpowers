@@ -1,0 +1,14 @@
+{
+  "SessionStart": [
+    {
+      "matcher": "*",
+      "hooks": [
+        {
+          "name": "superpowers-intro",
+          "type": "command",
+          "command": "bash "${extensionPath}/hooks/gemini-session-start.sh""
+        }
+      ]
+    }
+  ]
+}
