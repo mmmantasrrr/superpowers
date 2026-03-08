@@ -61,6 +61,18 @@ Fetch and follow instructions from https://raw.githubusercontent.com/obra/superp
 
 **Detailed docs:** [docs/README.codex.md](docs/README.codex.md)
 
+### Gemini CLI
+
+This port utilizes your local `dispatch-harness` to execute complex plans. Ensure `dispatch` is in your PATH.
+
+**Installation:**
+```bash
+gemini extensions install https://github.com/obra/superpowers.git#gemini-cli-port
+```
+
+**Workflow:**
+The extension will automatically initialize on startup via a `SessionStart` hook. When executing plans, the primary agent will use `run_shell_command` to delegate tasks to your local `dispatch` workers.
+
 ### OpenCode
 
 Tell OpenCode:
